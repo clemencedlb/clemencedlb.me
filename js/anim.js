@@ -7,7 +7,7 @@ function ouvrirBulle(ratioB, timing, speed, fonctionFin) {
 	//Calcul de la taille
 	if (haut < larg) { var taille = haut*ratioB; } else { var taille = larg*ratioB; };
 	//alert('Taille :'+taille+' et fenetre :'+$(window).height());
-	if (taille < 700) { taille = 705; };
+	if (taille < 600) { taille = 605; };
 	
 	//Bord rond
 	$('#wrapTexte').css({'border-radius': taille});
@@ -157,7 +157,7 @@ function  lunchPorto() {
 };
 
 //constantes initiales
-var ratio = 1.05;
+var ratio = 0.9;
 var speed = 0.8;
 var hover = false;
 
