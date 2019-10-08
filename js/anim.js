@@ -34,7 +34,7 @@ function ouvrirBulle(ratioB, timing, speed, fonctionFin) {
 function animerIcones(top, bottom) {
 	if (hover == false) {
         $("#contact a").each(function(index) {
-            console.info(index);
+            // console.info(index);
             $($("#contact a")[index]).delay(index*50).animate({top: top+'px'}, 300).animate({top: bottom+'px'}, 300);
         });
 	};
