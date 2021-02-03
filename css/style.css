@@ -159,7 +159,8 @@ svg {
 
 #contact {
     height: 80px;
-    width: 650px;
+    /*width: 650px;*/
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -179,12 +180,23 @@ svg {
     width: 45px;
 }
 
+#calendar img {
+    width: 35px;
+    height: 35px; 
+}
+
 #resume {
     padding: 0 20px;
 }
 
+
 #linkedin {
     padding-left: 20px;
+}
+
+#linkedin img {
+    width: 40px;
+    height: 40px;
 }
 
 .item img,
