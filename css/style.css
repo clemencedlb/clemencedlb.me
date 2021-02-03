@@ -159,8 +159,7 @@ svg {
 
 #contact {
     height: 80px;
-    /*width: 650px;*/
-    width: 100%;
+    /*width: 650px;*/    
     margin: 0 auto;
     overflow: hidden;
 }
