@@ -1,3 +1,5 @@
+/* Global Styles */
+
 body {
     background: url('../img/bg.jpg');
     font-family: 'Cantarell', sans-serif;
@@ -9,8 +11,7 @@ body {
     margin: 0;
 }
 
-
-/* Contenu principal */
+/* Main Content */
 
 #wrapTexte {
     position: absolute;
@@ -20,8 +21,7 @@ body {
     height: 0;
     width: 0;
     padding: 0;
-    /* border: 14px solid #1B1B1B; */
-    background: url('../img/sustainability.svg') no-repeat center  200px;
+    background: url('../img/sustainability.svg') no-repeat center 200px;
     overflow: hidden;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .profile-image {
-    width: 130px; /* Adjust the size as needed */
+    width: 130px;
     height: 130px;
     border-radius: 50%;
     margin-right: 20px;
@@ -89,38 +89,34 @@ body {
 /* Media query for small screens */
 @media screen and (max-width: 600px) {
     #headline {
-        margin-bottom: 10px; /* Adjust spacing for smaller screens */
+        margin-bottom: 10px;
     }
 
     .profile-image {
-        margin-bottom: 10px; /* Adjust spacing for smaller screens */
+        margin-bottom: 10px;
     }
 
     #headline-text {
-        max-width: 100%; /* Allow the text to take full width if needed */
-        padding: 0 20px; /* Add padding for better readability */
+        max-width: 100%;
+        padding: 0 20px;
     }
 
-    /* Additional styles to make content more responsive on smaller screens */
     h1 {
-        font-size: 24px; /* Adjust font size for better readability */
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 16px; /* Adjust font size for better readability */
+        font-size: 16px;
     }
 }
 
-/* Style g�n�raux */
+/* General Styles */
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-weight: normal;
 }
 
-h1,
-h2 {
+h1, h2 {
     text-align: center;
 }
 
@@ -132,8 +128,6 @@ h1 {
 
 h2 {
     font-size: 20px;
-    /* border-bottom: 3px solid #1B1B1B;
-    border-top: 3px solid #1B1B1B; */
     position: relative;
     top: 5px;
     padding: 5px 0;
@@ -148,7 +142,7 @@ h3 {
 }
 
 .subtitle {
-    margin: -10px 0 20px 0;
+    margin: 0px 0 20px 0;
     font-weight: lighter;
 }
 
@@ -170,13 +164,13 @@ svg {
     fill: #1B1B1B;
 }
 
+/* Language Styles */
 
-/* Pour les diff�rentes langues */
-
-.leftCol,
-.rightCol {
-    width: 250px;
-    overflow: hidden;
+#wrapTexte .leftCol,
+#wrapTexte .rightCol {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .leftCol {
@@ -186,11 +180,16 @@ svg {
 
 .rightCol {
     float: right;
-    text-align: right;
+    text-align: left;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-/* Contact */
+/* Contact Styles */
 
 #wrapContact {
     height: 80px;
@@ -199,7 +198,6 @@ svg {
 
 #contact {
     height: 80px;
-    /*width: 650px;*/    
     margin: 0 auto;
     overflow: hidden;
 }
@@ -221,13 +219,12 @@ svg {
 
 #calendar img {
     width: 35px;
-    height: 35px; 
+    height: 35px;
 }
 
 #resume {
     padding: 0 20px;
 }
-
 
 #linkedin {
     padding-left: 20px;
@@ -238,12 +235,90 @@ svg {
     height: 40px;
 }
 
-.item img,
-.item svg {
+.item img, .item svg {
     float: left;
 }
 
-.on,
-#wrapPorto {
+.on, #wrapPorto {
     display: none;
+}
+
+body.second-page {
+    background: url('../img/bg.jpg');
+    font-family: 'Cantarell', sans-serif;
+    font-variation: small-caps;
+    color: #1B1B1B;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.reference {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.left-column img {
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+.right-column {
+    flex: 2;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 10px;
+    
+}
+
+.reference-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.reference-item p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.reference-item p em {
+    font-style: italic;
+}
+
+.cta {
+    display: inline-block;
+    padding: 8px;
+    background-color: #158ACD;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.title-underline {
+    width: fit-content; /* Set width to fit the content */
+    margin: 30px auto 60px auto; /* Adjust top margin and other margins as needed, and set left and right margins to auto */
+    border-bottom: 3px solid #1B1B1B;
+    display: block;
 }
