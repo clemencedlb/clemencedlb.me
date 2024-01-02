@@ -66,13 +66,13 @@ body {
     width: 700px;
     height: 312px;
     right: 350px;
-    bottom: 156px;
+    bottom: 100px;
 }
 
 #headline {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .profile-image {
@@ -259,6 +259,10 @@ body.second-page {
     margin: 20px auto;
 }
 
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
 .reference {
     display: flex;
     border-bottom: 1px solid #ccc;
