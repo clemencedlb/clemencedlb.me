@@ -64,15 +64,20 @@ body {
 
 #main {
     width: 700px;
-    height: 312px;
+    height: 250px;
     right: 350px;
-    bottom: 100px;
+    bottom: 20px;
+}
+
+#intro {
+    width: 700px;
+    margin-bottom: 50px;
 }
 
 #headline {
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .profile-image {
@@ -108,7 +113,10 @@ body {
     h2 {
         font-size: 16px;
     }
+    
 }
+
+
 
 /* General Styles */
 
