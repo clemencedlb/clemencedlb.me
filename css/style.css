@@ -200,8 +200,9 @@ svg {
 /* Contact Styles */
 
 #wrapContact {
-    height: 80px;
+   height: 80px;
     border-bottom: 3px solid #1B1B1B;
+    text-align: center;
 }
 
 #contact {
@@ -211,14 +212,14 @@ svg {
 }
 
 .item {
-    display: block;
+     display: inline-block;
     height: 80px;
-    padding: 0 25px;
+    padding: 0 15px;
+    cursor: pointer;
     position: relative;
     top: 50px;
-    float: left;
-    cursor: pointer;
-    left: 96px;
+    float: none;     
+    left: auto; 
 }
 
 .item img {
