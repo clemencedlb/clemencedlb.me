@@ -205,20 +205,23 @@ svg {
 }
 
 #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* controls spacing between icons */
     height: 80px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .item {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 80px;
-    padding: 0 25px;
-    position: relative;
-    top: 50px;
-    float: left;
     cursor: pointer;
-    left: 96px;
+    padding: 0 10px;
+}
 }
 
 .item img {
